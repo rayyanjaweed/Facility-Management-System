@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_FxR_ALiTEeSMoLe9d8BVwA">
+  <modelElement href="FMS2.uml#_FbQEoLiTEeSMoLe9d8BVwA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HAHwsbiTEeSMoLe9d8BVwA" targetItem="_HAIXw7iTEeSMoLe9d8BVwA" sourceItem="_HAHwsLiTEeSMoLe9d8BVwA"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HAHwsLiTEeSMoLe9d8BVwA" sourceConnectionVisual="_HAHwsbiTEeSMoLe9d8BVwA" text="&#xD;&#xA;&#x9; * @return returns the connection status." item="_HAIXw7iTEeSMoLe9d8BVwA">
+    <modelElement href="FMS2.uml#_FjQxILiTEeSMoLe9d8BVwA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HAIXwLiTEeSMoLe9d8BVwA" name="DatabaseConnection">
+    <modelElement href="FMS2.uml#_Fe9f8LiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HAIXwbiTEeSMoLe9d8BVwA" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HAIXwriTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HAIXw7iTEeSMoLe9d8BVwA" comments="_HAHwsLiTEeSMoLe9d8BVwA" targetConnectionVisual="_HAHwsbiTEeSMoLe9d8BVwA" name="getSqlConnection" staticOperation="true">
+      <modelElement href="FMS2.uml#_Fe-HALiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HAIXxLiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HAIXxbiTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_Fiy3ELiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HAIXxriTEeSMoLe9d8BVwA" name="Connection">
+          <modelElement href="FMS2.uml#_FiDQMLiTEeSMoLe9d8BVwA"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HAKM8LiTEeSMoLe9d8BVwA" name="DateConverter">
+    <modelElement href="FMS2.uml#_Fe-uELiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HAKM8biTEeSMoLe9d8BVwA" position="-305.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HAKM8riTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HAKM87iTEeSMoLe9d8BVwA" name="convertToSqlDate" staticOperation="true">
+      <modelElement href="FMS2.uml#_FieG8LiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HAKM9LiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HAKM9biTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FieG8riTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HAKM9riTEeSMoLe9d8BVwA" name="Date">
+          <modelElement href="FMS2.uml#_Fic40biTEeSMoLe9d8BVwA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HAKM97iTEeSMoLe9d8BVwA" name="date">
+        <modelElement href="FMS2.uml#_FieG8biTEeSMoLe9d8BVwA"/>
+        <keywords xmi:id="_HAKM-LiTEeSMoLe9d8BVwA" keyword="final"/>
+        <type xmi:id="_HAKM-biTEeSMoLe9d8BVwA" name="Date">
+          <modelElement href="FMS2.uml#_FiLzELiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HAMCILiTEeSMoLe9d8BVwA" name="FMSConstants">
+    <modelElement href="FMS2.uml#_FfSQELiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HAMCIbiTEeSMoLe9d8BVwA" position="352.0,12.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HAMCIriTEeSMoLe9d8BVwA" label="+"/>
+    <attributes xmi:id="_HAMCI7iTEeSMoLe9d8BVwA" defaultValue="2" name="AVAILABLE_COMPLETELY" staticAttribute="true">
+      <modelElement href="FMS2.uml#_Fi-dQbiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HAMCJLiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_HAMCJbiTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_HAMCJriTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HAMCJ7iTEeSMoLe9d8BVwA" defaultValue="1" name="AVAILABLE_PARTIALLY" staticAttribute="true">
+      <modelElement href="FMS2.uml#_Fi_EULiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HAMCKLiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_HAMCKbiTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_HAMCKriTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_HAMCK7iTEeSMoLe9d8BVwA" defaultValue="0" name="NOT_AVAILABLE" staticAttribute="true">
+      <modelElement href="FMS2.uml#_Fi_EUriTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HAMCLLiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_HAMCLbiTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_HAMCLriTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.fms.model.facility">
+	<class name="BuildingDetails" table="BUILDING_DETAILS">
+		<id name="facilityID" column="facilityID"/>
+		<property name="buildingID" type="int" column="buildingID"/>
+		<property name="floors" type="int" column="floors"/>
+		<property name="numbOfElevators" type="int" column="numbOfElevators"/>
+		<property name="numbOfEscalators" type="int" column="numbOfEscalators"/>
+		<property name="numbOfRooms" type="int" column="numbOfRooms"/>
+		<property name="numbOfStaircases" type="int" column="numbOfStaircases"/>
+	</class>
+</hibernate-mapping>

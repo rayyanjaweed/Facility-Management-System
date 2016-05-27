@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.fms.model.maintenance">
+	<class name="FacilityMaintenanceDetails" table="MAINTENANCE_DETAILS">
+		<id name="facilityID" column="facilityID"/>
+		<property name="cost" type="double" column="cost"/>
+		<property name="downTimeDays" type="double" column="downTimeDays"/>
+		<property name="bookingID" type="int" column="bookingID"/>
+		<property name="maintenanceID" type="int" column="maintenanceID"/>
+	</class>
+</hibernate-mapping>

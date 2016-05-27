@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_Fx_JoLiTEeSMoLe9d8BVwA">
+  <modelElement href="FMS2.uml#_FcSmcLiTEeSMoLe9d8BVwA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HZeE0LiTEeSMoLe9d8BVwA" name="ClientView">
+    <modelElement href="FMS2.uml#_FfUFQLiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HZeE0biTEeSMoLe9d8BVwA" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HZeE0riTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HZeE07iTEeSMoLe9d8BVwA" name="main" staticOperation="true">
+      <modelElement href="FMS2.uml#_FfV6cLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HZeE1LiTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HZeE1biTEeSMoLe9d8BVwA" name="args">
+        <modelElement href="FMS2.uml#_FfV6cbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HZeE1riTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HZf6ALiTEeSMoLe9d8BVwA" name="FacilityView">
+    <modelElement href="FMS2.uml#_FfXIkLiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HZf6AbiTEeSMoLe9d8BVwA" position="270.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HZf6AriTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HZf6A7iTEeSMoLe9d8BVwA" name="main" staticOperation="true">
+      <modelElement href="FMS2.uml#_FfXvoLiTEeSMoLe9d8BVwA"/>
+      <stereotypes xmi:id="_HZf6BLiTEeSMoLe9d8BVwA" name="LegacyStyledElement">
+        <modelElement href="FMS2.uml#_FfY9wLiTEeSMoLe9d8BVwA"/>
+      </stereotypes>
+      <visibility xmi:id="_HZf6BbiTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HZf6BriTEeSMoLe9d8BVwA" name="args">
+        <modelElement href="FMS2.uml#_FfYWsLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HZf6B7iTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

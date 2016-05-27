@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.fms.model.facility">
+	<class name="AddressDetails" table="ADDRESS_DETAILS">
+		<id name="facilityID" column="facilityID"/>
+		<property name="serialNumb" type="int" column="serialNumb"/>
+		<property name="zipCode" type="int" column="zipCode"/>
+		<property name="streetName" type="string" column="streetName"/>
+		<property name="cityName" type="string" column="cityName"/>
+		<property name="stateName" type="string" column="stateName"/>
+	</class>
+</hibernate-mapping>

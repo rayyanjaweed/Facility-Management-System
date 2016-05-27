@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.fms.model.use">
+	<class name="FacilityUseDetails" table="FACILITY_USE_DETAILS">
+		<id name="facilityID" column="facilityID"/>
+		<property name="bookingDate" type="date" column="bookingDate"/>
+		<property name="bookingID" type="int" column="bookingID"/>
+		<property name="bookedBy" type="int" column="bookedBy"/>
+		<property name="numbOfSeats" type="int" column="numbOfSeats"/>
+	</class>
+</hibernate-mapping>

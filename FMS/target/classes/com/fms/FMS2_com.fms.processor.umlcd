@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_FxidsLiTEeSMoLe9d8BVwA">
+  <modelElement href="FMS2.uml#_FcCu0LiTEeSMoLe9d8BVwA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HMn7oLiTEeSMoLe9d8BVwA" name="FacilityMaintenanceProcessor">
+    <modelElement href="FMS2.uml#_FesaMLiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HMn7obiTEeSMoLe9d8BVwA" position="50.0,50.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HMn7oriTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HMn7o7iTEeSMoLe9d8BVwA" name="calcDownTimeForFacility">
+      <modelElement href="FMS2.uml#_FetBQLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMn7pLiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMn7pbiTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FetoUbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMn7priTEeSMoLe9d8BVwA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMn7p7iTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_FetoULiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMn7qLiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMn7qbiTEeSMoLe9d8BVwA" name="calcMaintenanceCostForFacility">
+      <modelElement href="FMS2.uml#_FetoUriTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMn7qriTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMn7q7iTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FeuPYbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMn7rLiTEeSMoLe9d8BVwA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMn7rbiTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_FeuPYLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMn7rriTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMn7r7iTEeSMoLe9d8BVwA" name="listFacilityMaintenanceRequest">
+      <modelElement href="FMS2.uml#_FeuPYriTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMn7sLiTEeSMoLe9d8BVwA" label="+"/>
+    </operations>
+    <operations xmi:id="_HMn7sbiTEeSMoLe9d8BVwA" name="requestFacilityMaintenance">
+      <modelElement href="FMS2.uml#_FiWLILiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMn7sriTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMn7s7iTEeSMoLe9d8BVwA" name="facilityUse">
+        <modelElement href="FMS2.uml#_FiWLIbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMn7tLiTEeSMoLe9d8BVwA" name="FacilityUseDetails">
+          <modelElement href="FMS2.uml#_Fej3ULiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMn7tbiTEeSMoLe9d8BVwA" name="scheduleFacilityMaintenance">
+      <modelElement href="FMS2.uml#_FiWLIriTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMn7triTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMn7t7iTEeSMoLe9d8BVwA" name="fmd">
+        <modelElement href="FMS2.uml#_FiWLI7iTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMn7uLiTEeSMoLe9d8BVwA" name="FacilityMaintenanceDetails">
+          <modelElement href="FMS2.uml#_FegM8LiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HMsNELiTEeSMoLe9d8BVwA" name="FacilityManagementProcessor">
+    <modelElement href="FMS2.uml#_FevdgLiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HMsNEbiTEeSMoLe9d8BVwA" position="516.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HMsNEriTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HMsNE7iTEeSMoLe9d8BVwA" name="addFacilityDetail">
+      <modelElement href="FMS2.uml#_FewroLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMsNFLiTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMsNFbiTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_FewrobiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNFriTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HMsNF7iTEeSMoLe9d8BVwA" name="detail">
+        <modelElement href="FMS2.uml#_FexSsLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNGLiTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMsNGbiTEeSMoLe9d8BVwA" name="removeFacility">
+      <modelElement href="FMS2.uml#_Fex5wLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMsNGriTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMsNG7iTEeSMoLe9d8BVwA" name="ID">
+        <modelElement href="FMS2.uml#_Fex5wbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNHLiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMsNHbiTEeSMoLe9d8BVwA" name="getFacilityInformationByID">
+      <modelElement href="FMS2.uml#_Feyg0LiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMsNHriTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMsNH7iTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FiXZQriTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNILiTEeSMoLe9d8BVwA" name="FacilityDetails">
+          <modelElement href="FMS2.uml#_FeYRILiTEeSMoLe9d8BVwA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMsNIbiTEeSMoLe9d8BVwA" name="ID">
+        <modelElement href="FMS2.uml#_Feyg0biTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNIriTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMsNI7iTEeSMoLe9d8BVwA" name="listFacilities">
+      <modelElement href="FMS2.uml#_Fezu8LiTEeSMoLe9d8BVwA"/>
+      <stereotypes xmi:id="_HMsNJLiTEeSMoLe9d8BVwA" name="Generics">
+        <modelElement href="FMS2.uml#_Fe0WALiTEeSMoLe9d8BVwA"/>
+      </stereotypes>
+      <visibility xmi:id="_HMsNJbiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMsNJriTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_Fiwa0LiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNJ7iTEeSMoLe9d8BVwA" name="ArrayList">
+          <modelElement href="FMS2.uml#_FiGTgbiTEeSMoLe9d8BVwA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_HMsNKLiTEeSMoLe9d8BVwA" name="addFacility">
+      <modelElement href="FMS2.uml#_FiWyMLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMsNKbiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMsNKriTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FiXZQbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNK7iTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMsNLLiTEeSMoLe9d8BVwA" name="facility">
+        <modelElement href="FMS2.uml#_FiXZQLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMsNLbiTEeSMoLe9d8BVwA" name="FacilityDetails">
+          <modelElement href="FMS2.uml#_FeYRILiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMsNLriTEeSMoLe9d8BVwA" name="modifyFacility">
+      <modelElement href="FMS2.uml#_FiXZQ7iTEeSMoLe9d8BVwA"/>
+      <stereotypes xmi:id="_HMsNL7iTEeSMoLe9d8BVwA" name="LegacyStyledElement">
+        <modelElement href="FMS2.uml#_FiYAULiTEeSMoLe9d8BVwA"/>
+      </stereotypes>
+      <visibility xmi:id="_HMs0ILiTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMs0IbiTEeSMoLe9d8BVwA" name="facility">
+        <modelElement href="FMS2.uml#_FiXZRLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMs0IriTEeSMoLe9d8BVwA" name="FacilityDetails">
+          <modelElement href="FMS2.uml#_FeYRILiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HMyTsLiTEeSMoLe9d8BVwA" name="FacilityUseProcessor">
+    <modelElement href="FMS2.uml#_Fe2yQLiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_HMyTsbiTEeSMoLe9d8BVwA" position="-404.0,-7.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_HMyTsriTEeSMoLe9d8BVwA" label="+"/>
+    <operations xmi:id="_HMyTs7iTEeSMoLe9d8BVwA" name="assignFacilityToUse">
+      <modelElement href="FMS2.uml#_Fe3ZULiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyTtLiTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMyTtbiTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_Fe3ZUbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTtriTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyTt7iTEeSMoLe9d8BVwA" name="getTotalCapacity">
+      <modelElement href="FMS2.uml#_Fe4ncLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyTuLiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMyTubiTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_Fe5OgbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTuriTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMyTu7iTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_Fe5OgLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTvLiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyTvbiTEeSMoLe9d8BVwA" name="vacateFacility">
+      <modelElement href="FMS2.uml#_Fe51kLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyTvriTEeSMoLe9d8BVwA" label="+"/>
+      <parameters xmi:id="_HMyTv7iTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_Fe51kbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTwLiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyTwbiTEeSMoLe9d8BVwA" name="bookFacility">
+      <modelElement href="FMS2.uml#_FiYnYLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyTwriTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMyTw7iTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FiZOcbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTxLiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMyTxbiTEeSMoLe9d8BVwA" name="facilityUse">
+        <modelElement href="FMS2.uml#_FiZOcLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTxriTEeSMoLe9d8BVwA" name="FacilityUseDetails">
+          <modelElement href="FMS2.uml#_Fej3ULiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyTx7iTEeSMoLe9d8BVwA" name="isFacilityAvailable">
+      <modelElement href="FMS2.uml#_FiZOcriTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyTyLiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMyTybiTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FiZOdLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTyriTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMyTy7iTEeSMoLe9d8BVwA" name="facility">
+        <modelElement href="FMS2.uml#_FiZOc7iTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyTzLiTEeSMoLe9d8BVwA" name="FacilityDetails">
+          <modelElement href="FMS2.uml#_FeYRILiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyTzbiTEeSMoLe9d8BVwA" name="isFacilityAvailableForDate">
+      <modelElement href="FMS2.uml#_FixB4LiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyTzriTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMyTz7iTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FixB47iTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT0LiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMyT0biTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_FixB4biTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT0riTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HMyT07iTEeSMoLe9d8BVwA" name="forDate">
+        <modelElement href="FMS2.uml#_FixB4riTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT1LiTEeSMoLe9d8BVwA" name="Date">
+          <modelElement href="FMS2.uml#_FiLzELiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyT1biTEeSMoLe9d8BVwA" name="getNumbOfBookedSeats">
+      <modelElement href="FMS2.uml#_Fixo8LiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyT1riTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMyT17iTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FiyQALiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT2LiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMyT2biTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_Fixo8biTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT2riTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HMyT27iTEeSMoLe9d8BVwA" name="forDate">
+        <modelElement href="FMS2.uml#_Fixo8riTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT3LiTEeSMoLe9d8BVwA" name="Date">
+          <modelElement href="FMS2.uml#_FiLzELiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_HMyT3biTEeSMoLe9d8BVwA" name="getAvailableCapacity">
+      <modelElement href="FMS2.uml#_FiyQAbiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_HMyT3riTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_HMyT37iTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FiyQBLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT4LiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_HMyT4biTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_FiyQAriTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT4riTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_HMyT47iTEeSMoLe9d8BVwA" name="forDate">
+        <modelElement href="FMS2.uml#_FiyQA7iTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_HMyT5LiTEeSMoLe9d8BVwA" name="Date">
+          <modelElement href="FMS2.uml#_FiLzELiTEeSMoLe9d8BVwA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

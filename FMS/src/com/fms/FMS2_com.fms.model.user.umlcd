@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_Fw9O4LiTEeSMoLe9d8BVwA">
+  <modelElement href="FMS2.uml#_Fb_EcLiTEeSMoLe9d8BVwA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_G3cV0LiTEeSMoLe9d8BVwA" name="UserDetails">
+    <modelElement href="FMS2.uml#_Feov0LiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_G3cV0biTEeSMoLe9d8BVwA" position="50.0,50.0"/>
+    <visibility xmi:id="_G3cV0riTEeSMoLe9d8BVwA" label="+"/>
+    <attributes xmi:id="_G3cV07iTEeSMoLe9d8BVwA" name="userID">
+      <modelElement href="FMS2.uml#_Fi9PILiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_G3cV1LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_G3cV1biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_G3cV1riTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_G3cV17iTEeSMoLe9d8BVwA" name="emailID">
+      <modelElement href="FMS2.uml#_Fi92MLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_G3cV2LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_G3cV2biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_G3cV2riTEeSMoLe9d8BVwA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_G3cV27iTEeSMoLe9d8BVwA" name="firstName">
+      <modelElement href="FMS2.uml#_Fi92MbiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_G3cV3LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_G3cV3biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_G3cV3riTEeSMoLe9d8BVwA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_G3cV37iTEeSMoLe9d8BVwA" name="middleName">
+      <modelElement href="FMS2.uml#_Fi92MriTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_G3cV4LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_G3cV4biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_G3cV4riTEeSMoLe9d8BVwA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_G3cV47iTEeSMoLe9d8BVwA" name="lastName">
+      <modelElement href="FMS2.uml#_Fi92M7iTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_G3cV5LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_G3cV5biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_G3cV5riTEeSMoLe9d8BVwA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_G3cV57iTEeSMoLe9d8BVwA" name="mobNumber">
+      <modelElement href="FMS2.uml#_Fi-dQLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_G3cV6LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_G3cV6biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_G3cV6riTEeSMoLe9d8BVwA" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_G3cV67iTEeSMoLe9d8BVwA" name="UserDetails">
+      <modelElement href="FMS2.uml#_FeqlALiTEeSMoLe9d8BVwA"/>
+      <keywords xmi:id="_G3cV7LiTEeSMoLe9d8BVwA" keyword="create"/>
+      <visibility xmi:id="_G3cV7biTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_G3cV7riTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FerMFLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV77iTEeSMoLe9d8BVwA" name="UserDetails">
+          <modelElement href="FMS2.uml#_Feov0LiTEeSMoLe9d8BVwA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_G3cV8LiTEeSMoLe9d8BVwA" name="emailID">
+        <modelElement href="FMS2.uml#_FeqlAbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV8biTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_G3cV8riTEeSMoLe9d8BVwA" name="firstName">
+        <modelElement href="FMS2.uml#_FeqlAriTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV87iTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_G3cV9LiTEeSMoLe9d8BVwA" name="middleName">
+        <modelElement href="FMS2.uml#_FeqlA7iTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV9biTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_G3cV9riTEeSMoLe9d8BVwA" name="lastName">
+        <modelElement href="FMS2.uml#_FeqlBLiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV97iTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_G3cV-LiTEeSMoLe9d8BVwA" name="mobNumber">
+        <modelElement href="FMS2.uml#_FerMELiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV-biTEeSMoLe9d8BVwA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_G3cV-riTEeSMoLe9d8BVwA" name="userID">
+        <modelElement href="FMS2.uml#_FerMEbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_G3cV-7iTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

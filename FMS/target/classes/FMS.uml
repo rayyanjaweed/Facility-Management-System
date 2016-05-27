@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_v2MdMLiREeSMoLe9d8BVwA" name="FMS">
+    <eAnnotations xmi:id="_wYWIALiREeSMoLe9d8BVwA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_wYWvELiREeSMoLe9d8BVwA" source="codegen">
+        <details xmi:id="_wYWvEbiREeSMoLe9d8BVwA" key="codegenDirectory" value="/FMS/src"/>
+        <details xmi:id="_xoVwQLiREeSMoLe9d8BVwA" key="AssociatedSourceCode" value="/FMS/src/com/fms/dao/facility/FacilityDAO.java;2688824740/1;/FMS/src/com/fms/dao/facility/FacilityMaintenanceDAO.java;3585506199/1;/FMS/src/com/fms/dao/facility/FacilityUseDAO.java;912119876/1;/FMS/src/com/fms/dao/facility/InterfaceFacilityDAO.java;3262909853/1;/FMS/src/com/fms/dao/facility/InterfaceFacilityMaintenanceDAO.java;3719323783/1;/FMS/src/com/fms/dao/facility/InterfaceFacilityUseDAO.java;4005825869/1;/FMS/src/com/fms/model/facility/FacilityDetails.java;3234571412/1;/FMS/src/com/fms/model/maintenance/FacilityMaintenanceDetails.java;182052975/1;/FMS/src/com/fms/model/use/FacilityUseDetails.java;1571766688/1;/FMS/src/com/fms/model/user/UserDetails.java;964764937/1;/FMS/src/com/fms/processor/FacilityMaintenanceProcessor.java;2385866585/1;/FMS/src/com/fms/processor/FacilityManagementProcessor.java;3283501551/1;/FMS/src/com/fms/view/FacilityView.java;1271148301/1;/FMS/src/com/fms/util/DatabaseConnection.java;3881237743/1;/FMS/src/com/fms/util/DateConverter.java;1534733794/1;/FMS/src/com/fms/util/FMSConstants.java;1970459757/1;/FMS/src/com/fms/view/ClientView.java;3510247310/1;/FMS/src/com/fms/processor/FacilityUseProcessor.java;3578244839/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_w9XgoLiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_w9XgobiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_w9YHsLiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_w9YHsbiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_w9YHsriREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_w9YHs7iREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_w9YHtLiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_w9YHtbiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_w9ZV0LiREeSMoLe9d8BVwA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_w6UzsLiREeSMoLe9d8BVwA" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_w6VawLiREeSMoLe9d8BVwA" name="fms">
+        <packagedElement xmi:type="uml:Package" xmi:id="_w6VawbiREeSMoLe9d8BVwA" name="dao">
+          <packagedElement xmi:type="uml:Package" xmi:id="_w6krULiREeSMoLe9d8BVwA" name="facility">
+            <packagedElement xmi:type="uml:Class" xmi:id="_w9QL4LiREeSMoLe9d8BVwA" name="FacilityDAO">
+              <interfaceRealization xmi:id="_xKBckLiREeSMoLe9d8BVwA" client="_w9QL4LiREeSMoLe9d8BVwA" supplier="_w96TMLiREeSMoLe9d8BVwA" contract="_w96TMLiREeSMoLe9d8BVwA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLcY4LiREeSMoLe9d8BVwA" name="addFacility" specification="_xKCqsLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLc_8LiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xLc_8biREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>int rowsUpdated = 0;&#xD;
+		Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		&#xD;
+		if (con != null &amp;&amp; facility != null) {&#xD;
+			try {&#xD;
+				&#xD;
+				pstmt = con.prepareStatement(&quot;Insert into &quot;&#xD;
+												+ &quot;FACILITY_DETAILS &quot;&#xD;
+												+ &quot;( facilityName , facilityAddress , buildingNumb , floorNumb , roomNumb , capacity , isAvailable , isBuilding , isInUseNow )&quot;&#xD;
+											+ &quot;values&quot;&#xD;
+												+ &quot;(?,?,?,?,?,?,?,?,?)&quot;);&#xD;
+				pstmt.setString(1, facility.getFacilityName());&#xD;
+				pstmt.setString(2, facility.getFacilityAddress());&#xD;
+				pstmt.setInt(3, facility.getBuildingNumb());&#xD;
+				pstmt.setInt(4, facility.getFloorNumb());&#xD;
+				pstmt.setInt(5, facility.getRoomNumb());&#xD;
+				pstmt.setInt(6, facility.getCapacity());&#xD;
+				pstmt.setBoolean(7, facility.isAvailable());&#xD;
+				pstmt.setBoolean(8, facility.isBuilding());&#xD;
+				pstmt.setBoolean(9, false);&#xD;
+				rowsUpdated = pstmt.executeUpdate();&#xD;
+			} catch (SQLException e) {&#xD;
+				System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+			} finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		return rowsUpdated;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLhRYLiREeSMoLe9d8BVwA" name="addFacilityDetail" specification="_w9byELiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLhRYbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLhRYriREeSMoLe9d8BVwA" name="detail">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		try{&#xD;
+			pstmt = con.prepareStatement(&quot;UPDATE FACILITY_DETAILS SET facilityDetail = ? where facilityID = ?&quot;);&#xD;
+			pstmt.setString(1, detail);&#xD;
+			pstmt.setInt(2, facilityID);&#xD;
+			pstmt.executeUpdate();&#xD;
+		}catch(SQLException e){&#xD;
+			System.out.println(&quot;SQLException &quot;+e.getMessage());&#xD;
+		} finally {&#xD;
+			try {&#xD;
+				pstmt.close();&#xD;
+				con.close();&#xD;
+			} catch (SQLException e) {&#xD;
+				System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLhRY7iREeSMoLe9d8BVwA" name="deleteFacility" specification="_w9fccLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLhRZLiREeSMoLe9d8BVwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		try{&#xD;
+			pstmt = con.prepareStatement(&quot;DELETE FROM FACILITY_DETAILS WHERE facilityID = ?&quot;);&#xD;
+			pstmt.setInt(1, ID);&#xD;
+			pstmt.executeUpdate();&#xD;
+		}catch(SQLException e){&#xD;
+			System.out.println(&quot;SQLException &quot;+e.getMessage());&#xD;
+		} finally {&#xD;
+			try {&#xD;
+				pstmt.close();&#xD;
+				con.close();&#xD;
+			} catch (SQLException e) {&#xD;
+				System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLh4cLiREeSMoLe9d8BVwA" name="listFacilities" specification="_w9gqkLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLh4cbiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>ArrayList&lt;FacilityDetails> facilitiesList = new ArrayList&lt;FacilityDetails>();&#xD;
+		Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		ResultSet resultset = null;&#xD;
+		&#xD;
+		if (con != null) {&#xD;
+			try {&#xD;
+				&#xD;
+				pstmt = con.prepareStatement(&quot;SELECT * FROM FACILITY_DETAILS&quot;);&#xD;
+				resultset = pstmt.executeQuery();&#xD;
+				while (resultset.next()) {&#xD;
+					FacilityDetails fd = new FacilityDetails(resultset.getBoolean(&quot;isAvailable&quot;), &#xD;
+															resultset.getBoolean(&quot;isBuilding&quot;),&#xD;
+															resultset.getInt(&quot;capacity&quot;), &#xD;
+															resultset.getInt(&quot;buildingNumb&quot;), &#xD;
+															resultset.getInt(&quot;floorNumb&quot;), &#xD;
+															resultset.getInt(&quot;roomNumb&quot;), &#xD;
+															resultset.getString(&quot;facilityAddress&quot;), &#xD;
+															resultset.getString(&quot;facilityName&quot;));&#xD;
+					fd.setFacilityID(resultset.getInt(&quot;facilityID&quot;));&#xD;
+					facilitiesList.add(fd);&#xD;
+				}&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLExcpetion &quot;+e.getMessage());&#xD;
+				}&#xD;
+			} &#xD;
+		return facilitiesList;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLh4criREeSMoLe9d8BVwA" name="getFacilityInformationByID" specification="_w9kU8LiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLh4c7iREeSMoLe9d8BVwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLh4dLiREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		FacilityDetails facilityDetails = null;&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		ResultSet resultset = null;&#xD;
+		if (con != null &amp;&amp; ID != 0) {&#xD;
+			try {&#xD;
+				&#xD;
+				pstmt = con.prepareStatement(&quot;SELECT * FROM FACILITY_DETAILS WHERE facilityID = ?&quot;);&#xD;
+				pstmt.setInt(1, ID);&#xD;
+				resultset = pstmt.executeQuery();&#xD;
+				resultset.next();&#xD;
+				facilityDetails = new FacilityDetails(resultset.getBoolean(&quot;isAvailable&quot;), &#xD;
+														resultset.getBoolean(&quot;isBuilding&quot;), &#xD;
+														resultset.getInt(&quot;capacity&quot;), &#xD;
+														resultset.getInt(&quot;buildingNumb&quot;), &#xD;
+														resultset.getInt(&quot;floorNumb&quot;), &#xD;
+														resultset.getInt(&quot;roomNumb&quot;), &#xD;
+														resultset.getString(&quot;facilityAddress&quot;), &#xD;
+														resultset.getString(&quot;facilityName&quot;));&#xD;
+				facilityDetails.setFacilityID(resultset.getInt(&quot;facilityID&quot;));&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLExcpetion &quot;+e.getMessage());&#xD;
+			} finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return facilityDetails;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_w9byELiREeSMoLe9d8BVwA" name="addFacilityDetail" method="_xLhRYLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w9cZILiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w9cZIbiREeSMoLe9d8BVwA" name="detail">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w9fccLiREeSMoLe9d8BVwA" name="deleteFacility" method="_xLhRY7iREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w9gDgLiREeSMoLe9d8BVwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w9gqkLiREeSMoLe9d8BVwA" name="listFacilities" method="_xLh4cLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKqVwLiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w9kU8LiREeSMoLe9d8BVwA" name="getFacilityInformationByID" method="_xLh4criREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w9k8ALiREeSMoLe9d8BVwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xKD40LiREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKCqsLiREeSMoLe9d8BVwA" name="addFacility" isLeaf="true" method="_xLcY4LiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKDRwLiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKDRwbiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_w9qbkLiREeSMoLe9d8BVwA" name="FacilityMaintenanceDAO">
+              <interfaceRealization xmi:id="_xKFuALiREeSMoLe9d8BVwA" client="_w9qbkLiREeSMoLe9d8BVwA" supplier="_w-DdILiREeSMoLe9d8BVwA" contract="_w-DdILiREeSMoLe9d8BVwA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLifgLiREeSMoLe9d8BVwA" name="listFacilityMaintenanceRequest" specification="_w9sQwLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLifgbiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>ArrayList&lt;FacilityMaintenanceDetails> facilityMaintenanceRequestList = new ArrayList&lt;FacilityMaintenanceDetails>();&#xD;
+		Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		ResultSet resultset = null;&#xD;
+		if (con != null) {&#xD;
+			try {&#xD;
+				&#xD;
+				pstmt = con.prepareStatement(&quot;SELECT * FROM MAINTENANCE_DETAILS&quot;);&#xD;
+				resultset = pstmt.executeQuery();&#xD;
+				while (resultset.next()) {&#xD;
+					FacilityMaintenanceDetails fmd = new FacilityMaintenanceDetails(resultset.getDouble(&quot;cost&quot;),&#xD;
+																					resultset.getDouble(&quot;downTimeDays&quot;),&#xD;
+																					resultset.getInt(&quot;bookingID&quot;),&#xD;
+																					resultset.getInt(&quot;facilityID&quot;));&#xD;
+					fmd.setMaintenanceID(resultset.getInt(&quot;maintenanceID&quot;));&#xD;
+					facilityMaintenanceRequestList.add(fmd);&#xD;
+				}&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLExcpetion &quot;+e.getMessage());&#xD;
+				}&#xD;
+			} &#xD;
+		return facilityMaintenanceRequestList;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLifgriREeSMoLe9d8BVwA" name="scheduleFacilityMaintenance" specification="_xKGVELiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLifg7iREeSMoLe9d8BVwA" name="fmd" type="_w-ds0LiREeSMoLe9d8BVwA"/>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		if (con != null &amp;&amp; fmd != null ) {&#xD;
+			try {&#xD;
+				&#xD;
+				pstmt = con.prepareStatement(&quot;INSERT INTO MAINTENANCE_DETAILS &quot;&#xD;
+						+ &quot;(facilityID, bookingID, cost, downTimeDays) &quot;&#xD;
+						+ &quot;VALUES (?,?,?,?)&quot;);&#xD;
+				pstmt.setInt(1, fmd.getFacilityID());&#xD;
+				pstmt.setInt(2, fmd.getBookingID());&#xD;
+				pstmt.setDouble(3, fmd.getCost());&#xD;
+				pstmt.setDouble(4, fmd.getDownTimeDays());&#xD;
+				pstmt.executeUpdate();&#xD;
+				&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLException &quot;+ e.getMessage());&#xD;
+			}finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_w9sQwLiREeSMoLe9d8BVwA" name="listFacilityMaintenanceRequest" method="_xLifgLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKrj4LiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKGVELiREeSMoLe9d8BVwA" name="scheduleFacilityMaintenance" method="_xLifgriREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKGVEbiREeSMoLe9d8BVwA" name="fmd" type="_w-ds0LiREeSMoLe9d8BVwA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_w9xJQLiREeSMoLe9d8BVwA" name="FacilityUseDAO">
+              <interfaceRealization xmi:id="_xKJ_cLiREeSMoLe9d8BVwA" client="_w9xJQLiREeSMoLe9d8BVwA" supplier="_w-IVoLiREeSMoLe9d8BVwA" contract="_w-IVoLiREeSMoLe9d8BVwA"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLjGkLiREeSMoLe9d8BVwA" name="assignFacilityToUse" specification="_w9y-cLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLjGkbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		&#xD;
+		if(con != null &amp;&amp; facilityID != 0){&#xD;
+			try{&#xD;
+				pstmt = con.prepareStatement(&quot;UPDATE FACILITY_DETAILS SET isInUseNow = ? WHERE facilityID = ?&quot;);&#xD;
+				pstmt.setBoolean(1, true);&#xD;
+				pstmt.setInt(2, facilityID);&#xD;
+				pstmt.executeUpdate();&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLException &quot;+ e.getMessage());&#xD;
+			}finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLjtoLiREeSMoLe9d8BVwA" name="bookFacility" specification="_xKKmgLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLjtobiREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xLjtoriREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		PreparedStatement pstmt2 = null;&#xD;
+		ResultSet resultset = null;&#xD;
+		int bookingID = 0;&#xD;
+		&#xD;
+		if (con != null &amp;&amp; facilityUse != null ) {&#xD;
+			try {&#xD;
+				&#xD;
+				pstmt = con.prepareStatement(&quot;INSERT INTO FACILITY_USE_DETAILS &quot;&#xD;
+						+ &quot;(facilityID, bookingDate, bookedBy, numbOfSeats) &quot;&#xD;
+						+ &quot;VALUES (?,?,?,?)&quot;);&#xD;
+				pstmt.setInt(1, facilityUse.getFacilityID());&#xD;
+				pstmt.setDate(2, DateConverter.convertToSqlDate(facilityUse.getBookingDate()));&#xD;
+				pstmt.setInt(3, facilityUse.getBookedBy());&#xD;
+				pstmt.setInt(4, facilityUse.getNumbOfSeats());&#xD;
+				pstmt.executeUpdate();&#xD;
+				&#xD;
+				pstmt2 = con.prepareStatement(&quot;SELECT MAX(bookingID) FROM FACILITY_USE_DETAILS &quot;);&#xD;
+				resultset = pstmt2.executeQuery();&#xD;
+				resultset.next();&#xD;
+				bookingID = resultset.getInt(1);&#xD;
+				&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLException &quot;+ e.getMessage());&#xD;
+			}finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return bookingID;&#xD;
+		&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLjto7iREeSMoLe9d8BVwA" name="checkFacilityAvailabilityForDate" specification="_xKsK8LiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLjtpLiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLjtpbiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xLjtpriREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		PreparedStatement pstmt2 = null;&#xD;
+		ResultSet resultset = null;&#xD;
+		ResultSet resultset2 = null;&#xD;
+		int totalBookedSeats = 0;&#xD;
+		int totalCapacity = 0;&#xD;
+		&#xD;
+		if (con != null &amp;&amp; facilityID != 0 &amp;&amp; forDate != null) {&#xD;
+			try {&#xD;
+				&#xD;
+					pstmt = con.prepareStatement(&quot;SELECT SUM(numbOfSeats) FROM FACILITY_USE_DETAILS WHERE facilityID = ? AND bookingDate = ?&quot;);&#xD;
+					pstmt.setInt(1, facilityID);&#xD;
+					java.sql.Date tempDate  = DateConverter.convertToSqlDate(forDate);&#xD;
+					pstmt.setDate(2, tempDate);&#xD;
+					resultset = pstmt.executeQuery();&#xD;
+					while (resultset.next()) {&#xD;
+						totalBookedSeats = resultset.getInt(1);&#xD;
+					}&#xD;
+					&#xD;
+					pstmt2 = con.prepareStatement(&quot;Select capacity from FACILITY_DETAILS WHERE facilityID = ?&quot;);&#xD;
+					pstmt2.setInt(1, facilityID);&#xD;
+					resultset2 = pstmt2.executeQuery();&#xD;
+					while (resultset2.next()) {&#xD;
+						totalCapacity = resultset2.getInt(1);&#xD;
+					}&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLException : &quot;+ e.getMessage());&#xD;
+			}finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		if(totalBookedSeats == 0){&#xD;
+			return FMSConstants.AVAILABLE_COMPLETELY;&#xD;
+		}else if(totalBookedSeats &lt; totalCapacity){&#xD;
+			return FMSConstants.AVAILABLE_PARTIALLY;&#xD;
+		}else{&#xD;
+			return FMSConstants.NOT_AVAILABLE;&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLkUsLiREeSMoLe9d8BVwA" name="getNumbOfBookedSeats" specification="_xKuAILiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLkUsbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLkUsriREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xLkUs7iREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		ResultSet resultset = null;&#xD;
+		int totalBookedSeats = 0;&#xD;
+		&#xD;
+		if (con != null &amp;&amp; facilityID != 0 &amp;&amp; forDate != null) {&#xD;
+			try {&#xD;
+				&#xD;
+					pstmt = con.prepareStatement(&quot;SELECT SUM(numbOfSeats) FROM FACILITY_USE_DETAILS WHERE facilityID = ? AND bookingDate = ?&quot;);&#xD;
+					pstmt.setInt(1, facilityID);&#xD;
+					pstmt.setDate(2, DateConverter.convertToSqlDate(forDate));&#xD;
+					resultset = pstmt.executeQuery();&#xD;
+					while (resultset.next()) {&#xD;
+						totalBookedSeats = resultset.getInt(1);&#xD;
+					}&#xD;
+					&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLException : &quot;+ e.getMessage());&#xD;
+			}finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		return totalBookedSeats;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLmJ4LiREeSMoLe9d8BVwA" name="vacateFacility" specification="_w92BwLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLmJ4biREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Connection con = DatabaseConnection.getSqlConnection();&#xD;
+		PreparedStatement pstmt = null;&#xD;
+		&#xD;
+		if(con != null &amp;&amp; facilityID != 0){&#xD;
+			try{&#xD;
+				pstmt = con.prepareStatement(&quot;UPDATE FACILITY_DETAILS SET isInUseNow = ? WHERE facilityID = ?&quot;);&#xD;
+				pstmt.setBoolean(1, false);&#xD;
+				pstmt.setInt(2, facilityID);&#xD;
+				pstmt.executeUpdate();&#xD;
+			}catch(SQLException e){&#xD;
+				System.out.println(&quot;SQLException &quot;+ e.getMessage());&#xD;
+			}finally {&#xD;
+				try {&#xD;
+					pstmt.close();&#xD;
+					con.close();&#xD;
+				} catch (SQLException e) {&#xD;
+					System.out.println(&quot;SQLException&quot; + e.getMessage());&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_w9y-cLiREeSMoLe9d8BVwA" name="assignFacilityToUse" method="_xLjGkLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w9y-cbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w92BwLiREeSMoLe9d8BVwA" name="vacateFacility" method="_xLmJ4LiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w92BwbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKKmgLiREeSMoLe9d8BVwA" name="bookFacility" method="_xLjtoLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKKmgbiREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKLNkLiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKsK8LiREeSMoLe9d8BVwA" name="checkFacilityAvailabilityForDate" method="_xLjto7iREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKsyALiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xKsyAbiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKsyAriREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKuAILiREeSMoLe9d8BVwA" name="getNumbOfBookedSeats" method="_xLkUsLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xKuAIbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xKunMLiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKunMbiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_w96TMLiREeSMoLe9d8BVwA" name="InterfaceFacilityDAO">
+              <ownedOperation xmi:id="_w98IYLiREeSMoLe9d8BVwA" name="addFacilityDetail">
+                <ownedParameter xmi:id="_w98IYbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w98vcLiREeSMoLe9d8BVwA" name="detail">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w99WgLiREeSMoLe9d8BVwA" name="deleteFacility">
+                <ownedParameter xmi:id="_w99WgbiREeSMoLe9d8BVwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w999kLiREeSMoLe9d8BVwA" name="getFacilityInformationByID">
+                <ownedParameter xmi:id="_w9-koLiREeSMoLe9d8BVwA" name="ID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xKNp0riREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w9_LsLiREeSMoLe9d8BVwA" name="listFacilities">
+                <ownedParameter xmi:id="_xKv1ULiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKNCwLiREeSMoLe9d8BVwA" name="addFacility">
+                <ownedParameter xmi:id="_xKNp0LiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKNp0biREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_w-DdILiREeSMoLe9d8BVwA" name="InterfaceFacilityMaintenanceDAO">
+              <ownedOperation xmi:id="_w-EEMLiREeSMoLe9d8BVwA" name="listFacilityMaintenanceRequest">
+                <ownedParameter xmi:id="_xKwcYLiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKPfALiREeSMoLe9d8BVwA" name="scheduleFacilityMaintenance">
+                <ownedParameter xmi:id="_xKPfAbiREeSMoLe9d8BVwA" name="fmd" type="_w-ds0LiREeSMoLe9d8BVwA"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_w-IVoLiREeSMoLe9d8BVwA" name="InterfaceFacilityUseDAO">
+              <ownedOperation xmi:id="_w-JjwLiREeSMoLe9d8BVwA" name="assignFacilityToUse">
+                <ownedParameter xmi:id="_w-KK0LiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w-MnELiREeSMoLe9d8BVwA" name="vacateFacility">
+                <ownedParameter xmi:id="_w-MnEbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKQtILiREeSMoLe9d8BVwA" name="bookFacility">
+                <ownedParameter xmi:id="_xKQtIbiREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKRUMLiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKxDcLiREeSMoLe9d8BVwA" name="checkFacilityAvailabilityForDate">
+                <ownedParameter xmi:id="_xKxqgLiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xKxqgbiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKxqgriREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xKyRkLiREeSMoLe9d8BVwA" name="getNumbOfBookedSeats">
+                <ownedParameter xmi:id="_xKyRkbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xKy4oLiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xKy4obiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_w6bhYLiREeSMoLe9d8BVwA" name="model">
+          <packagedElement xmi:type="uml:Package" xmi:id="_w6bhYbiREeSMoLe9d8BVwA" name="facility">
+            <packagedElement xmi:type="uml:Class" xmi:id="_w-PDULiREeSMoLe9d8BVwA" name="FacilityDetails">
+              <ownedAttribute xmi:id="_xLCJMLiREeSMoLe9d8BVwA" name="isAvailable" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLD-YbiREeSMoLe9d8BVwA" name="isBuilding" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLElcbiREeSMoLe9d8BVwA" name="isInUseNow" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLFMgbiREeSMoLe9d8BVwA" name="capacity" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLFzkLiREeSMoLe9d8BVwA" name="buildingNumb" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLFzkbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLGaoLiREeSMoLe9d8BVwA" name="floorNumb" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLGaobiREeSMoLe9d8BVwA" name="roomNumb" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLHBsLiREeSMoLe9d8BVwA" name="facilityAddress" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLHBsbiREeSMoLe9d8BVwA" name="facilityName" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLomILiREeSMoLe9d8BVwA" name="FacilityDetails" specification="_w-TUwLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLomIbiREeSMoLe9d8BVwA" name="isAvailable">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomIriREeSMoLe9d8BVwA" name="isBuilding">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomI7iREeSMoLe9d8BVwA" name="capacity">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomJLiREeSMoLe9d8BVwA" name="buildingNumb">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomJbiREeSMoLe9d8BVwA" name="floorNumb">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomJriREeSMoLe9d8BVwA" name="roomNumb">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomJ7iREeSMoLe9d8BVwA" name="facilityAddress">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomKLiREeSMoLe9d8BVwA" name="facilityName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLomKbiREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>super();&#xD;
+		this.isAvailable = isAvailable;&#xD;
+		this.isBuilding = isBuilding;&#xD;
+		this.isInUseNow = false;&#xD;
+		this.capacity = capacity;&#xD;
+		this.buildingNumb = buildingNumb;&#xD;
+		this.floorNumb = floorNumb;&#xD;
+		this.roomNumb = roomNumb;&#xD;
+		this.facilityAddress = facilityAddress;&#xD;
+		this.facilityName = facilityName;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLpNMLiREeSMoLe9d8BVwA" name="displayFacilityDetails" specification="_w-WYELiREeSMoLe9d8BVwA">
+                <language>java</language>
+                <body>System.out.println(&quot;FACILITY ID : \&quot;&quot; + getFacilityID() &#xD;
+						+ &quot;\&quot;, FACILITY NAME : \&quot;&quot; + getFacilityName() &#xD;
+						+ &quot;\&quot;, FACILITY ADDRESS : \&quot;&quot; + getFacilityAddress() &#xD;
+						+ &quot;\&quot;, BUILDING NO. : \&quot;&quot; + getBuildingNumb()&#xD;
+						+ &quot;\&quot;, FLOOR NO. : \&quot;&quot; + getFloorNumb()&#xD;
+						+ &quot;\&quot;, ROOM NO. : \&quot;&quot; + getRoomNumb()&#xD;
+						+ &quot;\&quot;CAPACITY : \&quot;&quot; + getCapacity()&#xD;
+						+ &quot;\&quot;FACILITY AVAILABILITY : \&quot;&quot; + isAvailable()&#xD;
+						+ &quot;\&quot;BUILDING OR ROOM : \&quot;&quot; + isBuilding());&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLpNMbiREeSMoLe9d8BVwA" name="isAvailable" specification="_w-XmMLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLpNMriREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return isAvailable;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLpNM7iREeSMoLe9d8BVwA" name="isBuilding" specification="_w-YNQLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLpNNLiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return isBuilding;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLp0QLiREeSMoLe9d8BVwA" name="isInUseNow" specification="_w-Y0UbiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLp0QbiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return isInUseNow;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_w-TUwLiREeSMoLe9d8BVwA" name="FacilityDetails" method="_xLomILiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_w-VJ8biREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_w-VJ8riREeSMoLe9d8BVwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_w-T70LiREeSMoLe9d8BVwA" name="isAvailable">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-T70biREeSMoLe9d8BVwA" name="isBuilding">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-T70riREeSMoLe9d8BVwA" name="capacity">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-Ui4LiREeSMoLe9d8BVwA" name="buildingNumb">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-Ui4biREeSMoLe9d8BVwA" name="floorNumb">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-Ui4riREeSMoLe9d8BVwA" name="roomNumb">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-Ui47iREeSMoLe9d8BVwA" name="facilityAddress">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-VJ8LiREeSMoLe9d8BVwA" name="facilityName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-VxALiREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w-WYELiREeSMoLe9d8BVwA" name="displayFacilityDetails" method="_xLpNMLiREeSMoLe9d8BVwA"/>
+              <ownedOperation xmi:id="_w-XmMLiREeSMoLe9d8BVwA" name="isAvailable" method="_xLpNMbiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w-XmMbiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w-YNQLiREeSMoLe9d8BVwA" name="isBuilding" method="_xLpNM7iREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w-Y0ULiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w-Y0UbiREeSMoLe9d8BVwA" name="isInUseNow" method="_xLp0QLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_w-ZbYLiREeSMoLe9d8BVwA" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_w6qx8LiREeSMoLe9d8BVwA" name="maintenance">
+            <packagedElement xmi:type="uml:Class" xmi:id="_w-ds0LiREeSMoLe9d8BVwA" name="FacilityMaintenanceDetails">
+              <ownedAttribute xmi:id="_xLIP0LiREeSMoLe9d8BVwA" name="cost">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLIP0biREeSMoLe9d8BVwA" name="downTimeDays">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLI24LiREeSMoLe9d8BVwA" name="bookingID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLI24biREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLJd8LiREeSMoLe9d8BVwA" name="maintenanceID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLqbULiREeSMoLe9d8BVwA" name="FacilityMaintenanceDetails" specification="_w-gJELiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLqbUbiREeSMoLe9d8BVwA" name="cost">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLqbUriREeSMoLe9d8BVwA" name="downTimeDays">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLqbU7iREeSMoLe9d8BVwA" name="bookingID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLqbVLiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLqbVbiREeSMoLe9d8BVwA" type="_w-ds0LiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>super();&#xD;
+		this.cost = cost;&#xD;
+		this.downTimeDays = downTimeDays;&#xD;
+		this.bookingID = bookingID;&#xD;
+		this.facilityID = facilityID;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLrCYLiREeSMoLe9d8BVwA" name="displayFacilityMaintenanceDetails" specification="_w-h-QLiREeSMoLe9d8BVwA">
+                <language>java</language>
+                <body>System.out.println(&quot;MAINTENANCE ID : \&quot;&quot; + getMaintenanceID() &#xD;
+						+ &quot;\&quot;, FACILITY ID : \&quot;&quot; + getFacilityID() &#xD;
+						+ &quot;\&quot;, BOOKING ID : \&quot;&quot; + getBookingID() &#xD;
+						+ &quot;\&quot;, COST : \&quot;&quot; + getCost()&#xD;
+						+ &quot;\&quot;, DOWN TIME DAYS : \&quot;&quot; + getDownTimeDays() );&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_w-gJELiREeSMoLe9d8BVwA" name="FacilityMaintenanceDetails" method="_xLqbULiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_w-gwJLiREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_w-hXMLiREeSMoLe9d8BVwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_w-gwILiREeSMoLe9d8BVwA" name="cost">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-gwIbiREeSMoLe9d8BVwA" name="downTimeDays">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-gwIriREeSMoLe9d8BVwA" name="bookingID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-gwI7iREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-hXMbiREeSMoLe9d8BVwA" type="_w-ds0LiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_w-h-QLiREeSMoLe9d8BVwA" name="displayFacilityMaintenanceDetails" method="_xLrCYLiREeSMoLe9d8BVwA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_w6w4kLiREeSMoLe9d8BVwA" name="use">
+            <packagedElement xmi:type="uml:Class" xmi:id="_w-kagLiREeSMoLe9d8BVwA" name="FacilityUseDetails">
+              <ownedAttribute xmi:id="_xLKFALiREeSMoLe9d8BVwA" name="bookingDate" type="_xKHjMLiREeSMoLe9d8BVwA" association="_xL_ygLiREeSMoLe9d8BVwA"/>
+              <ownedAttribute xmi:id="_xLKsELiREeSMoLe9d8BVwA" name="bookingID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLKsEbiREeSMoLe9d8BVwA" name="bookedBy">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLLTILiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLLTIbiREeSMoLe9d8BVwA" name="numbOfSeats">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLrpcLiREeSMoLe9d8BVwA" name="FacilityUseDetails" specification="_xK1U4LiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLrpcbiREeSMoLe9d8BVwA" name="bookingDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xLs3kLiREeSMoLe9d8BVwA" name="bookedBy">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLs3kbiREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLs3kriREeSMoLe9d8BVwA" name="numbOfSeats">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLs3k7iREeSMoLe9d8BVwA" type="_w-kagLiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>super();&#xD;
+		this.bookingDate = bookingDate;&#xD;
+		this.bookedBy = bookedBy;&#xD;
+		this.facilityID = facilityID;&#xD;
+		this.numbOfSeats = numbOfSeats;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLuFsLiREeSMoLe9d8BVwA" name="FacilityUseDetails" specification="_xK2jALiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLuFsbiREeSMoLe9d8BVwA" name="bookingDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xLuFsriREeSMoLe9d8BVwA" name="bookedBy">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLuFs7iREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLuFtLiREeSMoLe9d8BVwA" type="_w-kagLiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>super();&#xD;
+		this.bookingDate = bookingDate;&#xD;
+		this.bookedBy = bookedBy;&#xD;
+		this.facilityID = facilityID;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_xK1U4LiREeSMoLe9d8BVwA" name="FacilityUseDetails" method="_xLrpcLiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_xK178LiREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_xK178biREeSMoLe9d8BVwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_xK1U4biREeSMoLe9d8BVwA" name="bookingDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xK1U4riREeSMoLe9d8BVwA" name="bookedBy">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xK1U47iREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xK1U5LiREeSMoLe9d8BVwA" name="numbOfSeats">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xK178riREeSMoLe9d8BVwA" type="_w-kagLiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_xK2jALiREeSMoLe9d8BVwA" name="FacilityUseDetails" method="_xLuFsLiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_xK3KE7iREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_xK3KFLiREeSMoLe9d8BVwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_xK3KELiREeSMoLe9d8BVwA" name="bookingDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+                <ownedParameter xmi:id="_xK3KEbiREeSMoLe9d8BVwA" name="bookedBy">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xK3KEriREeSMoLe9d8BVwA" name="facilityID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xK3KFbiREeSMoLe9d8BVwA" type="_w-kagLiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_xL_ygLiREeSMoLe9d8BVwA" name="" memberEnd="_xLKFALiREeSMoLe9d8BVwA _xL_ygbiREeSMoLe9d8BVwA">
+              <ownedEnd xmi:id="_xL_ygbiREeSMoLe9d8BVwA" name="" type="_w-kagLiREeSMoLe9d8BVwA" association="_xL_ygLiREeSMoLe9d8BVwA"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_w8YCILiREeSMoLe9d8BVwA" name="user">
+            <packagedElement xmi:type="uml:Class" xmi:id="_w-rvQLiREeSMoLe9d8BVwA" name="UserDetails">
+              <ownedAttribute xmi:id="_xLMhQLiREeSMoLe9d8BVwA" name="userID" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLNIULiREeSMoLe9d8BVwA" name="emailID" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLNvYLiREeSMoLe9d8BVwA" name="firstName" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLOWcLiREeSMoLe9d8BVwA" name="middleName" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLOWcbiREeSMoLe9d8BVwA" name="lastName" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_xLOWcriREeSMoLe9d8BVwA" name="mobNumber" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLvT0LiREeSMoLe9d8BVwA" name="UserDetails" specification="_w-uykLiREeSMoLe9d8BVwA">
+                <ownedParameter xmi:id="_xLvT0biREeSMoLe9d8BVwA" name="emailID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLvT0riREeSMoLe9d8BVwA" name="firstName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLvT07iREeSMoLe9d8BVwA" name="middleName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLvT1LiREeSMoLe9d8BVwA" name="lastName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLvT1biREeSMoLe9d8BVwA" name="mobNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLvT1riREeSMoLe9d8BVwA" name="userID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_xLvT17iREeSMoLe9d8BVwA" type="_w-rvQLiREeSMoLe9d8BVwA" direction="return"/>
+                <language>java</language>
+                <body>super();&#xD;
+		this.emailID = emailID;&#xD;
+		this.firstName = firstName;&#xD;
+		this.middleName = middleName;&#xD;
+		this.lastName = lastName;&#xD;
+		this.mobNumber = mobNumber;&#xD;
+		this.userID = userID;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_w-uykLiREeSMoLe9d8BVwA" name="UserDetails" method="_xLvT0LiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_w-vZpLiREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_w-wAsLiREeSMoLe9d8BVwA" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_w-uykbiREeSMoLe9d8BVwA" name="emailID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-uykriREeSMoLe9d8BVwA" name="firstName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-vZoLiREeSMoLe9d8BVwA" name="middleName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-vZobiREeSMoLe9d8BVwA" name="lastName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-vZoriREeSMoLe9d8BVwA" name="mobNumber">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-vZo7iREeSMoLe9d8BVwA" name="userID">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_w-wAsbiREeSMoLe9d8BVwA" type="_w-rvQLiREeSMoLe9d8BVwA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_w6cIcLiREeSMoLe9d8BVwA" name="util">
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_gOoLiREeSMoLe9d8BVwA" name="DatabaseConnection">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL32s7iREeSMoLe9d8BVwA" name="getSqlConnection" specification="_w_g1sLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL32tLiREeSMoLe9d8BVwA" type="_xJyzELiREeSMoLe9d8BVwA" direction="return"/>
+              <language>java</language>
+              <body>Connection conn = null;&#xD;
+		try {&#xD;
+			Class.forName(&quot;com.mysql.jdbc.Driver&quot;);&#xD;
+			conn = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/FMSDatabase?&quot; + &quot;user=root&amp;password=tiger&quot;);&#xD;
+		} catch (SQLException e) {&#xD;
+			System.out.println(&quot;SQLException&quot;);&#xD;
+		} catch (ClassNotFoundException e) {&#xD;
+			System.out.println(&quot;SQLException&quot;);&#xD;
+		}&#xD;
+		return conn;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_w_g1sLiREeSMoLe9d8BVwA" name="getSqlConnection" isStatic="true" method="_xL32s7iREeSMoLe9d8BVwA">
+              <ownedComment xmi:id="_xMBAoLiREeSMoLe9d8BVwA">
+                <body>&#xD;
+	 * @return returns the connection status.</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_xK60cLiREeSMoLe9d8BVwA" type="_xJyzELiREeSMoLe9d8BVwA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_iD0LiREeSMoLe9d8BVwA" name="DateConverter">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL4dwLiREeSMoLe9d8BVwA" name="convertToSqlDate" specification="_xKhL0biREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL4dwbiREeSMoLe9d8BVwA" name="date" type="_xKHjMLiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_xL4dwriREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_xL4dw7iREeSMoLe9d8BVwA" key="final"/>
+                </eAnnotations>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL4dxLiREeSMoLe9d8BVwA" type="_xKgkwLiREeSMoLe9d8BVwA" direction="return"/>
+              <language>java</language>
+              <body>SimpleDateFormat sft = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xD;
+		final String strDate = sft.format(date);&#xD;
+		return java.sql.Date.valueOf(strDate);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_xKhL0biREeSMoLe9d8BVwA" name="convertToSqlDate" isStatic="true" method="_xL4dwLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xKhy4LiREeSMoLe9d8BVwA" name="date" type="_xKHjMLiREeSMoLe9d8BVwA">
+                <eAnnotations xmi:id="_xKhy4riREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_xKhy47iREeSMoLe9d8BVwA" key="final"/>
+                </eAnnotations>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xKhy4biREeSMoLe9d8BVwA" type="_xKgkwLiREeSMoLe9d8BVwA" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_jR8LiREeSMoLe9d8BVwA" name="FMSConstants">
+            <ownedAttribute xmi:id="_xLPkkLiREeSMoLe9d8BVwA" name="AVAILABLE_COMPLETELY" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_xLPkkbiREeSMoLe9d8BVwA" value="2"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_xLPkkriREeSMoLe9d8BVwA" name="AVAILABLE_PARTIALLY" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_xLQLoLiREeSMoLe9d8BVwA" value="1"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_xLQLobiREeSMoLe9d8BVwA" name="NOT_AVAILABLE" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_xLQysLiREeSMoLe9d8BVwA" value="0"/>
+            </ownedAttribute>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_w8c6oLiREeSMoLe9d8BVwA" name="processor">
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_K3cLiREeSMoLe9d8BVwA" name="FacilityMaintenanceProcessor">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLv64LiREeSMoLe9d8BVwA" name="calcDownTimeForFacility" specification="_w_NTsLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xLv64biREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xLv64riREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>FacilityUseProcessor fup = new FacilityUseProcessor();&#xD;
+		int totalSeats = fup.getTotalCapacity(facilityID);&#xD;
+		double downTimeDays = (totalSeats)%100;&#xD;
+		return downTimeDays;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLy-MLiREeSMoLe9d8BVwA" name="calcMaintenanceCostForFacility" specification="_w_Pv8LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xLzlQLiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xLzlQbiREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>FacilityUseProcessor fup = new FacilityUseProcessor();&#xD;
+		int totalSeats = fup.getTotalCapacity(facilityID);&#xD;
+		double downTimeDays = calcDownTimeForFacility(facilityID);&#xD;
+		double costInDollars = (1*totalSeats)+(50*downTimeDays);&#xD;
+		return costInDollars;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLzlQriREeSMoLe9d8BVwA" name="listFacilityMaintenanceRequest" specification="_w_QXALiREeSMoLe9d8BVwA">
+              <language>java</language>
+              <body>ArrayList&lt;FacilityMaintenanceDetails> facilityMaintenanceRequestList = new ArrayList&lt;FacilityMaintenanceDetails>();&#xD;
+		InterfaceFacilityMaintenanceDAO iFacilityMaintenanceDAO = new FacilityMaintenanceDAO();&#xD;
+		facilityMaintenanceRequestList = iFacilityMaintenanceDAO.listFacilityMaintenanceRequest();&#xD;
+		for(int i = 0; i &lt; facilityMaintenanceRequestList.size() ; i++){&#xD;
+			facilityMaintenanceRequestList.get(i).displayFacilityMaintenanceDetails();&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xLzlQ7iREeSMoLe9d8BVwA" name="requestFacilityMaintenance" specification="_xKWzwLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xLzlRLiREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+              <language>java</language>
+              <body>int bookingID = 0;&#xD;
+		double cost = 0;&#xD;
+		double downTimeDays = 0;&#xD;
+		FacilityUseProcessor fup = new FacilityUseProcessor();&#xD;
+		int totalSeats = fup.getTotalCapacity(facilityUse.getFacilityID());&#xD;
+		facilityUse.setNumbOfSeats(totalSeats);&#xD;
+		bookingID = fup.bookFacility(facilityUse);&#xD;
+		cost = calcMaintenanceCostForFacility(facilityUse.getFacilityID());&#xD;
+		downTimeDays = calcDownTimeForFacility(facilityUse.getFacilityID());&#xD;
+		FacilityMaintenanceDetails fmd = new FacilityMaintenanceDetails(cost, downTimeDays, bookingID, facilityUse.getFacilityID());&#xD;
+		scheduleFacilityMaintenance(fmd);&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL0MULiREeSMoLe9d8BVwA" name="scheduleFacilityMaintenance" specification="_xKXa0LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL0MUbiREeSMoLe9d8BVwA" name="fmd" type="_w-ds0LiREeSMoLe9d8BVwA"/>
+              <language>java</language>
+              <body>InterfaceFacilityMaintenanceDAO iFacilityMaintenanceDAO = new FacilityMaintenanceDAO();&#xD;
+		iFacilityMaintenanceDAO.scheduleFacilityMaintenance(fmd);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_w_NTsLiREeSMoLe9d8BVwA" name="calcDownTimeForFacility" method="_xLv64LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_Oh0LiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_w_Oh0biREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_Pv8LiREeSMoLe9d8BVwA" name="calcMaintenanceCostForFacility" method="_xLy-MLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_Pv8biREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_w_Pv8riREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_QXALiREeSMoLe9d8BVwA" name="listFacilityMaintenanceRequest" method="_xLzlQriREeSMoLe9d8BVwA"/>
+            <ownedOperation xmi:id="_xKWzwLiREeSMoLe9d8BVwA" name="requestFacilityMaintenance" method="_xLzlQ7iREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xKWzwbiREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xKXa0LiREeSMoLe9d8BVwA" name="scheduleFacilityMaintenance" method="_xL0MULiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xKXa0biREeSMoLe9d8BVwA" name="fmd" type="_w-ds0LiREeSMoLe9d8BVwA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_TaULiREeSMoLe9d8BVwA" name="FacilityManagementProcessor">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL2BgLiREeSMoLe9d8BVwA" name="addFacility" specification="_xKYo8LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL2BgbiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xL2BgriREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>if(facility.isBuilding()){&#xD;
+			InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+			return iFacilityDAO.addFacility(facility);&#xD;
+		}else {&#xD;
+			InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+			return iFacilityDAO.addFacility(facility);&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL2Bg7iREeSMoLe9d8BVwA" name="addFacilityDetail" specification="_w_VPgLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL2BhLiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL2BhbiREeSMoLe9d8BVwA" name="detail">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+		iFacilityDAO.addFacilityDetail(facilityID , detail);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL2okLiREeSMoLe9d8BVwA" name="removeFacility" specification="_w_V2kLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL2okbiREeSMoLe9d8BVwA" name="ID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+		iFacilityDAO.deleteFacility(ID);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL2okriREeSMoLe9d8BVwA" name="getFacilityInformationByID" specification="_w_XEsLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL2ok7iREeSMoLe9d8BVwA" name="ID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL2olLiREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+              <language>java</language>
+              <body>InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+		return iFacilityDAO.getFacilityInformationByID(ID);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL3PoLiREeSMoLe9d8BVwA" name="listFacilities" specification="_w_YS0LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL3PobiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+              <language>java</language>
+              <body>ArrayList&lt;FacilityDetails> facilitiesList = new ArrayList&lt;FacilityDetails>();&#xD;
+		InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+		facilitiesList = iFacilityDAO.listFacilities();&#xD;
+		return facilitiesList;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_w_VPgLiREeSMoLe9d8BVwA" name="addFacilityDetail" method="_xL2Bg7iREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_VPgbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_w_VPgriREeSMoLe9d8BVwA" name="detail">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_V2kLiREeSMoLe9d8BVwA" name="removeFacility" method="_xL2okLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_V2kbiREeSMoLe9d8BVwA" name="ID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_XEsLiREeSMoLe9d8BVwA" name="getFacilityInformationByID" method="_xL2okriREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_XEsbiREeSMoLe9d8BVwA" name="ID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xKZ3ELiREeSMoLe9d8BVwA" type="_w-PDULiREeSMoLe9d8BVwA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_YS0LiREeSMoLe9d8BVwA" name="listFacilities" method="_xL3PoLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xK6NYLiREeSMoLe9d8BVwA" type="_xJ79ALiREeSMoLe9d8BVwA" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xKYo8LiREeSMoLe9d8BVwA" name="addFacility" method="_xL2BgLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xKZQALiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xKZQAbiREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xKZ3EbiREeSMoLe9d8BVwA" name="modifyFacility">
+              <ownedParameter xmi:id="_xKZ3EriREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_m8UbiREeSMoLe9d8BVwA" name="FacilityUseProcessor">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL5E07iREeSMoLe9d8BVwA" name="assignFacilityToUse" specification="_w_oKcLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL5E1LiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityUseDAO iFacilityDAO = new FacilityUseDAO();&#xD;
+		iFacilityDAO.assignFacilityToUse(facilityID);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL5r4LiREeSMoLe9d8BVwA" name="bookFacility" specification="_xKjBALiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL5r4biREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xL5r4riREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>int bookingID = 0;&#xD;
+		int facilityAvailability = isFacilityAvailableForDate(facilityUse.getFacilityID() , facilityUse.getBookingDate());&#xD;
+		int totalCapacity = getTotalCapacity(facilityUse.getFacilityID());&#xD;
+		if(FMSConstants.AVAILABLE_COMPLETELY == facilityAvailability){&#xD;
+			if(facilityUse.getNumbOfSeats() &lt;= totalCapacity){&#xD;
+				InterfaceFacilityUseDAO iFacilityDAO = new FacilityUseDAO();&#xD;
+				bookingID = iFacilityDAO.bookFacility(facilityUse);&#xD;
+			}&#xD;
+		}else if(FMSConstants.AVAILABLE_PARTIALLY == facilityAvailability){&#xD;
+			int availableCapacity = getNumbOfBookedSeats(facilityUse.getFacilityID(), facilityUse.getBookingDate());&#xD;
+			if(facilityUse.getNumbOfSeats() &lt;= availableCapacity){&#xD;
+				InterfaceFacilityUseDAO iFacilityDAO = new FacilityUseDAO();&#xD;
+				bookingID = iFacilityDAO.bookFacility(facilityUse);&#xD;
+			}&#xD;
+		}else if(FMSConstants.NOT_AVAILABLE == facilityAvailability){&#xD;
+			System.out.println(&quot;Facility not available&quot;);&#xD;
+		}&#xD;
+		return bookingID;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL5r47iREeSMoLe9d8BVwA" name="isFacilityAvailable" specification="_xKkPILiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL5r5LiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xL5r5biREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Date todayDate = new Date();&#xD;
+		return isFacilityAvailableForDate(facility.getFacilityID() , todayDate);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL6S8LiREeSMoLe9d8BVwA" name="isFacilityAvailableForDate" specification="_xK7bgLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL6S8biREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL6S8riREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xL6S87iREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityUseDAO iFacilityDAO = new FacilityUseDAO();&#xD;
+		return iFacilityDAO.checkFacilityAvailabilityForDate(facilityID, forDate);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL6S9LiREeSMoLe9d8BVwA" name="getNumbOfBookedSeats" specification="_xK9QsLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL6S9biREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL6S9riREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xL6S97iREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityUseDAO iFacilityDAO = new FacilityUseDAO();&#xD;
+		iFacilityDAO.getNumbOfBookedSeats(facilityID, forDate);&#xD;
+		return 1;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL66ALiREeSMoLe9d8BVwA" name="getTotalCapacity" specification="_w_p_oLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL66AbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL66AriREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityDAO iFacilityDAO = new FacilityDAO();&#xD;
+		FacilityDetails facilityDetails = iFacilityDAO.getFacilityInformationByID(facilityID);&#xD;
+		return facilityDetails.getCapacity();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL66A7iREeSMoLe9d8BVwA" name="getAvailableCapacity" specification="_xK93wLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL66BLiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xL66BbiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xL66BriREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>int numbOfBookedSeats = getNumbOfBookedSeats(facilityID,forDate);&#xD;
+		int totalCapacity = getTotalCapacity(facilityID);&#xD;
+		return (totalCapacity - numbOfBookedSeats);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL8IILiREeSMoLe9d8BVwA" name="vacateFacility" specification="_w_rNwLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL8IIbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>InterfaceFacilityUseDAO iFacilityDAO = new FacilityUseDAO();&#xD;
+		iFacilityDAO.vacateFacility(facilityID);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_w_oKcLiREeSMoLe9d8BVwA" name="assignFacilityToUse" method="_xL5E07iREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_oKcbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_p_oLiREeSMoLe9d8BVwA" name="getTotalCapacity" method="_xL66ALiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_p_obiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_w_p_oriREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_w_rNwLiREeSMoLe9d8BVwA" name="vacateFacility" method="_xL8IILiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_rNwbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xKjBALiREeSMoLe9d8BVwA" name="bookFacility" method="_xL5r4LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xKjoELiREeSMoLe9d8BVwA" name="facilityUse" type="_w-kagLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xKjoEbiREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xKkPILiREeSMoLe9d8BVwA" name="isFacilityAvailable" method="_xL5r47iREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xKkPIbiREeSMoLe9d8BVwA" name="facility" type="_w-PDULiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xKkPIriREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xK7bgLiREeSMoLe9d8BVwA" name="isFacilityAvailableForDate" method="_xL6S8LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xK8CkLiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xK8CkbiREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xK8CkriREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xK9QsLiREeSMoLe9d8BVwA" name="getNumbOfBookedSeats" method="_xL6S9LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xK9QsbiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xK9QsriREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xK9Qs7iREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_xK93wLiREeSMoLe9d8BVwA" name="getAvailableCapacity" method="_xL66A7iREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xK-e0LiREeSMoLe9d8BVwA" name="facilityID">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_xK-e0biREeSMoLe9d8BVwA" name="forDate" type="_xKHjMLiREeSMoLe9d8BVwA"/>
+              <ownedParameter xmi:id="_xK-e0riREeSMoLe9d8BVwA" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_w8joULiREeSMoLe9d8BVwA" name="view">
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_ckQLiREeSMoLe9d8BVwA" name="FacilityView">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL32sLiREeSMoLe9d8BVwA" name="main" specification="_w_dyYLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL32sbiREeSMoLe9d8BVwA" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xL32sriREeSMoLe9d8BVwA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>FacilityManagementProcessor fmp = new FacilityManagementProcessor();&#xD;
+		&#xD;
+		/*&#xD;
+&#xD;
+&#xD;
+&#xD;
+		//Add a new Facility&#xD;
+		FacilityDetails test = new FacilityDetails(true, false, 150, 444, 3, 302, &quot;Messi&quot;, &quot;Some Address to fill up the DB. Placein Chicago. Testing the length of the address&quot;, &quot;Nice Place. Good Facility&quot;);&#xD;
+		fmp.addFacility(test);&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		//List All Facilities&#xD;
+		ArrayList&lt;FacilityDetails> facilitiesList = new ArrayList&lt;FacilityDetails>();&#xD;
+		facilitiesList = fmp.listFacilities();&#xD;
+		for(int i = 0; i &lt; facilitiesList.size(); i++){&#xD;
+			facilitiesList.get(i).displayFacilityDetails();&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		//Get Facility Information by FacilityID&#xD;
+		FacilityDetails test21 = fmp.getFacilityInformationByID(5);&#xD;
+		test21.displayFacilityDetails();&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		//Removing a Facility&#xD;
+		fmp.removeFacility(5);&#xD;
+		&#xD;
+		*/&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_w_dyYLiREeSMoLe9d8BVwA" name="main" isStatic="true" method="_xL32sLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_dyYbiREeSMoLe9d8BVwA" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w_fAgLiREeSMoLe9d8BVwA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_w_lHILiREeSMoLe9d8BVwA" name="ClientView">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_xL5E0LiREeSMoLe9d8BVwA" name="main" specification="_w_mVQLiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_xL5E0biREeSMoLe9d8BVwA" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xL5E0riREeSMoLe9d8BVwA" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>//		· Facility:&#xD;
+//		1. List All Facilities&#xD;
+//		2. Get Facility Information by FacilityID&#xD;
+//		3. Get Available Capacity&#xD;
+//		4. Add Facility Detail&#xD;
+//		5. Add Facility Detail&#xD;
+//		6. Removing a Facility&#xD;
+		&#xD;
+//		· Facility Use:&#xD;
+//		7. Assign facility to use&#xD;
+//		8. Book a facility&#xD;
+//		9. Vacate the facility&#xD;
+		&#xD;
+//		· Facility Maintenance:&#xD;
+//		10. Make Facility maintenance request&#xD;
+//		11. Calculate Maintenance Cost&#xD;
+//		12. Calculate down time for maintenance&#xD;
+//		13. List maintenance requests&#xD;
+		&#xD;
+		int k = 4;&#xD;
+		&#xD;
+		FacilityMaintenanceProcessor fmaintp = new FacilityMaintenanceProcessor();&#xD;
+		FacilityManagementProcessor fmp = new FacilityManagementProcessor();&#xD;
+		FacilityUseProcessor fup = new FacilityUseProcessor();&#xD;
+		&#xD;
+		switch(k){&#xD;
+		&#xD;
+		case 1: &#xD;
+						//List All Facilities&#xD;
+						ArrayList&lt;FacilityDetails> facilitiesList = new ArrayList&lt;FacilityDetails>();&#xD;
+						facilitiesList = fmp.listFacilities();&#xD;
+						for(int i = 0; i &lt; facilitiesList.size(); i++){&#xD;
+							facilitiesList.get(i).displayFacilityDetails();&#xD;
+						}&#xD;
+						break;&#xD;
+						&#xD;
+		case 2: &#xD;
+						//Get Facility Information by FacilityID&#xD;
+						FacilityDetails test21 = fmp.getFacilityInformationByID(3);&#xD;
+						test21.displayFacilityDetails();&#xD;
+						break;&#xD;
+						&#xD;
+		case 3: &#xD;
+						//Get Available Capacity&#xD;
+						Date date = new Date(2015, 02, 20);&#xD;
+						System.out.println(&quot;Available Capacity =&quot; + fup.getAvailableCapacity(2, date ));&#xD;
+						break;&#xD;
+						&#xD;
+		case 4: &#xD;
+						//Add a new Facility&#xD;
+						FacilityDetails test = new FacilityDetails(true, false, 45000, 111, 2, 251, &quot;Lake Shore&quot;, &quot;Auditorium&quot;);&#xD;
+						fmp.addFacility(test);&#xD;
+						break;&#xD;
+						&#xD;
+		case 5: &#xD;
+						//Add Facility Detail&#xD;
+						fmp.addFacilityDetail(1, &quot;Detail: Area of the room is 34300 sqft&quot;);&#xD;
+						break;&#xD;
+						&#xD;
+		case 6: &#xD;
+						//Removing a Facility&#xD;
+						fmp.removeFacility(3);&#xD;
+						break;&#xD;
+						&#xD;
+		case 7: &#xD;
+						//Assign facility to use&#xD;
+						fup.assignFacilityToUse(6);&#xD;
+						break;&#xD;
+						&#xD;
+		case 8: &#xD;
+						//Book a facility&#xD;
+						Date date2 = new Date(2020 -1900, 02, 25);&#xD;
+						System.out.println(&quot;Date :&quot; + date2);&#xD;
+						FacilityUseDetails facilityUse = new FacilityUseDetails(date2, 1, 6, 100);&#xD;
+						fup.bookFacility(facilityUse);&#xD;
+						break;&#xD;
+						&#xD;
+		case 9: &#xD;
+						//Vacate the facility&#xD;
+						fup.vacateFacility(6);&#xD;
+						break;&#xD;
+						&#xD;
+		case 10: &#xD;
+						//Make Facility maintenance request&#xD;
+						Date date3 = new Date(2022 -1900, 00, 11);&#xD;
+						FacilityUseDetails facilityUse13 = new FacilityUseDetails(date3, 3, 6);&#xD;
+						fmaintp.requestFacilityMaintenance(facilityUse13);&#xD;
+						break;&#xD;
+						&#xD;
+		case 11: &#xD;
+						//Calculate Maintenance Cost&#xD;
+						double costInDollars = fmaintp.calcMaintenanceCostForFacility(2);&#xD;
+						System.out.println(&quot;Maintenance Cost for Facility = &quot; + costInDollars);&#xD;
+						break;&#xD;
+						&#xD;
+		case 12: &#xD;
+						//Calculate down time for maintenance&#xD;
+						double downTimeDays = fmaintp.calcDownTimeForFacility(2);&#xD;
+						System.out.println(&quot;Down time for maintenance in days = &quot; + downTimeDays);&#xD;
+						break;&#xD;
+						&#xD;
+		case 13:&#xD;
+						//List maintenance requests&#xD;
+						fmaintp.listFacilityMaintenanceRequest();	&#xD;
+						break;&#xD;
+		}&#xD;
+		&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_w_mVQLiREeSMoLe9d8BVwA" name="main" isStatic="true" method="_xL5E0LiREeSMoLe9d8BVwA">
+              <ownedParameter xmi:id="_w_mVQbiREeSMoLe9d8BVwA" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w_m8ULiREeSMoLe9d8BVwA" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_w6aTQLiREeSMoLe9d8BVwA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_w6aTQbiREeSMoLe9d8BVwA" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_xJyzELiREeSMoLe9d8BVwA" name="Connection"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_xJ1PULiREeSMoLe9d8BVwA" name="PreparedStatement"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_xJ3EgbiREeSMoLe9d8BVwA" name="ResultSet"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_xJ45sLiREeSMoLe9d8BVwA" name="SQLException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_xKdhcLiREeSMoLe9d8BVwA" name="DriverManager"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_xKgkwLiREeSMoLe9d8BVwA" name="Date"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_w6a6ULiREeSMoLe9d8BVwA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xJ79ALiREeSMoLe9d8BVwA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_xKHjMLiREeSMoLe9d8BVwA" name="Date"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_xKbsQLiREeSMoLe9d8BVwA" name="Iterator"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_w8mroLiREeSMoLe9d8BVwA" name="text">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xKevkLiREeSMoLe9d8BVwA" name="SimpleDateFormat"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_wYZyYLiREeSMoLe9d8BVwA">
+      <eAnnotations xmi:id="_wYc1sLiREeSMoLe9d8BVwA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_wYkKcLiREeSMoLe9d8BVwA" base_Package="_v2MdMLiREeSMoLe9d8BVwA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_w9ifwLiREeSMoLe9d8BVwA" genericsValue="FacilityDetails" base_Element="_w9gqkLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Generics xmi:id="_w9te4LiREeSMoLe9d8BVwA" genericsValue="FacilityMaintenanceDetails" base_Element="_w9sQwLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Generics xmi:id="_w-AZ0LiREeSMoLe9d8BVwA" genericsValue="FacilityDetails" base_Element="_w9_LsLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Generics xmi:id="_w-FSULiREeSMoLe9d8BVwA" genericsValue="FacilityMaintenanceDetails" base_Element="_w-EEMLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Generics xmi:id="_w_Zg8LiREeSMoLe9d8BVwA" genericsValue="FacilityDetails" base_Element="_w_YS0LiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_w_eZcLiREeSMoLe9d8BVwA" base_Element="_w_dyYLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Array xmi:id="_w_fnkLiREeSMoLe9d8BVwA" base_Element="_w_dyYbiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xJ0BMLiREeSMoLe9d8BVwA" base_Element="_xJyzELiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xJ3EgLiREeSMoLe9d8BVwA" base_Element="_xJ1PULiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xJ4SoLiREeSMoLe9d8BVwA" base_Element="_xJ3EgbiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xJ7V8LiREeSMoLe9d8BVwA" base_Element="_xJ45sLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xJ9LILiREeSMoLe9d8BVwA" base_Element="_xJ79ALiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xKIxULiREeSMoLe9d8BVwA" base_Element="_xKHjMLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_xKaeILiREeSMoLe9d8BVwA" base_Element="_xKZ3EbiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xKc6YLiREeSMoLe9d8BVwA" base_Element="_xKbsQLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xKeIgLiREeSMoLe9d8BVwA" base_Element="_xKdhcLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xKf9sLiREeSMoLe9d8BVwA" base_Element="_xKevkLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:Reference xmi:id="_xKhL0LiREeSMoLe9d8BVwA" base_Element="_xKgkwLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_xLD-YLiREeSMoLe9d8BVwA" base_Element="_xLCJMLiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_xLElcLiREeSMoLe9d8BVwA" base_Element="_xLD-YbiREeSMoLe9d8BVwA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_xLFMgLiREeSMoLe9d8BVwA" base_Element="_xLElcbiREeSMoLe9d8BVwA"/>
+</xmi:XMI>

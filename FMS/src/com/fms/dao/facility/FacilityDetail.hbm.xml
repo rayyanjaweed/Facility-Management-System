@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.fms.model.facility">
+	<class name="FacilityDetails" table="FACILITY_DETAILS">
+		<id name="facilityID" column="facilityID"/>
+		<property name="facilityName" type="string" column="facilityName"/>
+		<property name="facilityDetail" type="string" column="facilityDetail"/>
+		<property name="floorNumb" type="int" column="floorNumb"/>
+		<property name="roomNumb" type="int" column="roomNumb"/>
+		<property name="capacity" type="int" column="capacity"/>
+		<property name="isAvailable" type="boolean" column="isAvailable"/>
+		<property name="isBuilding" type="boolean" column="isBuilding"/>
+		<property name="isInUseNow" type="boolean" column="isInUseNow"/>
+		<one-to-one name="buildingDetails" class="com.fms.model.facility.BuildingDetails" cascade="save-update, delete"></one-to-one>
+		<one-to-one name="facilityAddress" class="com.fms.model.facility.AddressDetails" cascade="save-update, delete"></one-to-one>
+	</class>
+</hibernate-mapping>

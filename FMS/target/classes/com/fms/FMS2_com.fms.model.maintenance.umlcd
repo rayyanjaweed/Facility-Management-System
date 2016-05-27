@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_FwNoALiTEeSMoLe9d8BVwA">
+  <modelElement href="FMS2.uml#_FbVkMLiTEeSMoLe9d8BVwA"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Gitb8LiTEeSMoLe9d8BVwA" name="FacilityMaintenanceDetails">
+    <modelElement href="FMS2.uml#_FegM8LiTEeSMoLe9d8BVwA"/>
+    <visualProperties xmi:id="_Gitb8biTEeSMoLe9d8BVwA" position="50.0,50.0"/>
+    <visibility xmi:id="_Gitb8riTEeSMoLe9d8BVwA" label="+"/>
+    <attributes xmi:id="_Gitb87iTEeSMoLe9d8BVwA" name="cost">
+      <modelElement href="FMS2.uml#_Fi5kwLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_Gitb9LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_Gitb9biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_Gitb9riTEeSMoLe9d8BVwA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Gitb97iTEeSMoLe9d8BVwA" name="downTimeDays">
+      <modelElement href="FMS2.uml#_Fi6L0LiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_Gitb-LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_Gitb-biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_Gitb-riTEeSMoLe9d8BVwA" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Gitb-7iTEeSMoLe9d8BVwA" name="bookingID">
+      <modelElement href="FMS2.uml#_Fi6L0biTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_Gitb_LiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_Gitb_biTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_Gitb_riTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Gitb_7iTEeSMoLe9d8BVwA" name="facilityID">
+      <modelElement href="FMS2.uml#_Fi6L0riTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_GitcALiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_GitcAbiTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_GitcAriTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_GitcA7iTEeSMoLe9d8BVwA" name="maintenanceID">
+      <modelElement href="FMS2.uml#_Fi6y4LiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_GitcBLiTEeSMoLe9d8BVwA" label="+"/>
+      <cardinality xmi:id="_GitcBbiTEeSMoLe9d8BVwA" label="1" max="1" min="1"/>
+      <type xmi:id="_GitcBriTEeSMoLe9d8BVwA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_GitcB7iTEeSMoLe9d8BVwA" name="FacilityMaintenanceDetails">
+      <modelElement href="FMS2.uml#_FehbELiTEeSMoLe9d8BVwA"/>
+      <keywords xmi:id="_GitcCLiTEeSMoLe9d8BVwA" keyword="create"/>
+      <visibility xmi:id="_GitcCbiTEeSMoLe9d8BVwA" label="+"/>
+      <outParameters xmi:id="_GitcCriTEeSMoLe9d8BVwA">
+        <modelElement href="FMS2.uml#_FeiCJbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_GitcC7iTEeSMoLe9d8BVwA" name="FacilityMaintenanceDetails">
+          <modelElement href="FMS2.uml#_FegM8LiTEeSMoLe9d8BVwA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_GitcDLiTEeSMoLe9d8BVwA" name="cost">
+        <modelElement href="FMS2.uml#_FehbEbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_GitcDbiTEeSMoLe9d8BVwA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GitcDriTEeSMoLe9d8BVwA" name="downTimeDays">
+        <modelElement href="FMS2.uml#_FeiCILiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_GitcD7iTEeSMoLe9d8BVwA" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GitcELiTEeSMoLe9d8BVwA" name="bookingID">
+        <modelElement href="FMS2.uml#_FeiCIbiTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_GitcEbiTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_GitcEriTEeSMoLe9d8BVwA" name="facilityID">
+        <modelElement href="FMS2.uml#_FeiCIriTEeSMoLe9d8BVwA"/>
+        <type xmi:id="_GitcE7iTEeSMoLe9d8BVwA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_GitcFLiTEeSMoLe9d8BVwA" name="displayFacilityMaintenanceDetails">
+      <modelElement href="FMS2.uml#_FeipMLiTEeSMoLe9d8BVwA"/>
+      <visibility xmi:id="_GitcFbiTEeSMoLe9d8BVwA" label="+"/>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
